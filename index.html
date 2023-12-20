@@ -4,12 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./data/collisions.js" defer></script>
+    <script src="./data/collisions.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="./data/battle-zones.js" defer></script>
     <script src="./classes.js" defer></script>
     <script src="./index.js" defer></script>
   </head>
   <body>
-    <canvas></canvas>
+    <div style="position: relative;">
+      <div id="overlappingDiv" style="position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        background-color: black;
+      "></div>
+       <canvas></canvas>
+    </div>
 
     <style>
       body {
